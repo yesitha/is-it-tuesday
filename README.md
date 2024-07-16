@@ -1,5 +1,7 @@
 # is-it-tuesday
 
+[![Docker](https://github.com/hasithsen/is-it-tuesday/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/hasithsen/is-it-tuesday/actions/workflows/docker-publish.yml)
+
 ### About
 
 This flask app was created partly for fun, partly to be used in a test CI/CD pipeline.
