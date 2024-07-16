@@ -8,6 +8,7 @@ Inspired by https://shanetully.com/2024/07/hey-google-what-happened-to-all-the-f
 
 ### Local setup
 
+#### Without Docker
 ```sh
 # Create a Python virtual environment
 python3 -m venv .pyenv
@@ -21,5 +22,13 @@ pip install -r requirements.txt
 # Run Flask app
 flask --app tuesday run
 ```
+
+#### With Docker
+```sh
+docker build -t flask-tuesday-app .
+docker run -d -p 5000:5000 flask-tuesday-app
+```
+
+Access application on ```http://localhost:5000```.
 
 Have a good day!
