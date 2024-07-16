@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: tuesday
+  name: tuesday
+  namespace: tuesday
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tuesday
+  template:
+    metadata:
+      labels:
+        app: tuesday
+    spec:
+      containers:
+      - image: ghcr.io/hasithsen/is-it-tuesday:main
+        name: is-it-tuesday
+        resources:
+          requests:
+            memory: "32Mi"
+            cpu: "150m"
+          limits:
+            memory: "64Mi"
+            cpu: "300m"

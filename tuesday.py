@@ -1,6 +1,8 @@
 from flask import Flask
 import datetime
 
+__maintainer__ = "hasithsen - sen dot hasith at gmail"
+
 app = Flask(__name__)
 
 @app.route("/")
