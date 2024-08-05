@@ -43,6 +43,8 @@ service:
   type: ClusterIP
   port: 5000
 
+revisionHistoryLimit: 3
+
 ingress:
   enabled: false
   className: nginx
